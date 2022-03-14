@@ -41,13 +41,13 @@ nav ul li a:hover {
   color: pink;
 }
 
-.hero {
+main header {
   position: relative;
   background: linear-gradient(to bottom, rgba(128, 0, 128, .35), rgba(128, 0, 128, .35)), url('../images/hero-photo.28d4e53e_cropped.jpg');
-  height: 400px;
+  height: 365px;
 }
 
-.hero h2 {
+main header h2 {
   position: absolute;
   bottom: 0;
   right: 25px;
@@ -58,4 +58,38 @@ nav ul li a:hover {
   padding-right: 25px;
   padding-left: 25px; 
   border-radius: 5px 0 0 5px;
+}
+
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+section h3 {
+  padding-right: 25px;
+  width: 10%;
+}
+
+section article {
+  border-left: 3px solid purple;
+  padding-left: 25px;
+  width: 90%;
+}
+
+section article span {
+  margin: 0 50px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info p {
+  margin: 0 50px;
 }
