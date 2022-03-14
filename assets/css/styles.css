@@ -1,0 +1,61 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  color: purple;
+  padding: 15px 50px;
+}
+
+header h1 {
+  margin: 0;
+  background-color: purple;
+  margin-left: -50px;
+  padding: 0 15px;
+  color: black;
+  border-radius: 0 5px 5px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: purple;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: pink;
+}
+
+.hero {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(128, 0, 128, .35), rgba(128, 0, 128, .35)), url('../images/hero-photo.28d4e53e_cropped.jpg');
+  height: 400px;
+}
+
+.hero h2 {
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+  background-color: purple;
+  color: black;
+  font-size: 250%;
+  margin: 10px -25px;
+  padding-right: 25px;
+  padding-left: 25px; 
+  border-radius: 5px 0 0 5px;
+}
