@@ -51,6 +51,7 @@ main header {
   position: relative;
   background: linear-gradient(to bottom, rgba(128, 0, 128, .35), rgba(128, 0, 128, .35)), url('../images/hero-photo.28d4e53e_cropped.jpg');
   height: 365px;
+  margin-bottom: 25px;
 }
 
 main header h2 {
@@ -105,8 +106,11 @@ section article span {
   width: 50%;
 }
 
-#work img {
+#work a {
   width: 100%;
+}
+
+#work img {
   filter: brightness(.5);
   transition: all 300ms;
 }
@@ -120,6 +124,7 @@ section article span {
 figure {
   margin: 25px 10px;
   border: 3px solid var(--purple);
+  border-radius: 5px;
 }
 
 .contact-info {
