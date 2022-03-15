@@ -23,7 +23,7 @@ header h1 {
   margin: 0;
   background-color: var(--purple);
   margin-left: -50px;
-  padding: 15px 15px 0 15px;
+  padding: 5px 15px 0 15px;
   color: var(--black);
   border-radius: var(--border-radius-rounded-right);
 }
@@ -48,7 +48,6 @@ nav ul li {
 nav ul li a {
   color: var(--purple);
   text-decoration: none;
-  /* padding: 10 25px; */
 }
 
 nav ul li a:hover {
