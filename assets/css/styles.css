@@ -1,12 +1,13 @@
 :root {
   --purple: rgb(91 33 182);
   --lg-font-color: #FFF;
+  --black: rgb(15 23 42);
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #000;
+  background-color: var(--black);
   color: var(--purple);
   padding: 15px 50px;
 }
@@ -16,7 +17,7 @@ header h1 {
   background-color: var(--purple);
   margin-left: -50px;
   padding: 5px 15px 0 15px;
-  color: black;
+  color: var(--black);
   border-radius: 0 5px 5px 0;
 }
 
@@ -104,12 +105,21 @@ section article span {
   width: 50%;
 }
 
-#work article div img {
+#work img {
   width: 100%;
+  filter: brightness(.5);
+  transition: all 300ms;
+}
+
+#work img:hover {
+  filter: brightness(1);
+  cursor: pointer;
+  transition: all 300ms;
 }
 
 figure {
   margin: 25px 10px;
+  border: 3px solid var(--purple);
 }
 
 .contact-info {
@@ -136,10 +146,6 @@ article img:first-child {
 
 article figure:first-child {
   margin-left: 0;
-}
-
-article figure:nth-child(2) {
-  margin-right: 0;
 }
 
 article figure {
