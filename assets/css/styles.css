@@ -2,6 +2,7 @@
   --purple: rgb(91 33 182);
   --lg-font-color: #FFF;
   --black: rgb(15 23 42);
+  --border: 3px solid var(--purple);
 }
 
 header {
@@ -83,7 +84,7 @@ section h3 {
 }
 
 section article {
-  border-left: 3px solid var(--purple);
+  border-left: var(--border);
   padding-left: 25px;
   width: 90%;
 }
@@ -153,6 +154,10 @@ article figure:first-child {
   margin-left: 0;
 }
 
+article figure:nth-child(2) {
+  margin-right: 0;
+}
+
 article figure {
   position: relative;
   width: 100%;
@@ -173,6 +178,22 @@ article figure figcaption {
 }
 
 @media screen and (max-width: 968px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section h3 {
+    width: 85%;
+    text-align: center;
+    padding: 0;
+  }
+
+  section article {
+    border-left: none;
+    border-top: var(--border);
+  }
+
   article div {
     flex-direction: column;
     align-items: center;
@@ -180,6 +201,15 @@ article figure figcaption {
   
   #work article div figure {
     width: 100%;
+  }
+
+  #contact article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact article p {
+    margin: 10px 0;
   }
 }
 
