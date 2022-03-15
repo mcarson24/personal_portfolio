@@ -116,6 +116,10 @@ section article span {
   transition: all 300ms;
 }
 
+#work article figure:first-child {
+  margin: 25px 0;
+}
+
 #work img:hover {
   filter: brightness(1);
   cursor: pointer;
