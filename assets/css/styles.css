@@ -3,6 +3,8 @@
   --lg-font-color: #FFF;
   --black: rgb(15 23 42);
   --border: 3px solid var(--purple);
+  --border-radius-rounded-left: 5px 0 0 5px;
+  --border-radius-rounded-right: 0 5px 5px 0;
 }
 
 html {
@@ -23,7 +25,7 @@ header h1 {
   margin-left: -50px;
   padding: 5px 15px 0 15px;
   color: var(--black);
-  border-radius: 0 5px 5px 0;
+  border-radius: var(--border-radius-rounded-right);
 }
 
 nav {
@@ -69,7 +71,7 @@ main header h2 {
   margin: 10px -25px;
   padding-right: 25px;
   padding-left: 25px; 
-  border-radius: 5px 0 0 5px;
+  border-radius: var(--border-radius-rounded-left)
 }
 
 .container {
@@ -182,7 +184,7 @@ article figure figcaption {
   bottom: 15px;
   right: 0;
   background-color: var(--purple);
-  border-radius: 5px 0 0 5px;
+  border-radius: var(--border-radius-rounded-left);
   padding: 5px 10px;
 }
 
