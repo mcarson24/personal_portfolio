@@ -46,10 +46,11 @@ nav ul li {
 nav ul li a {
   color: var(--purple);
   text-decoration: none;
+  padding: 10 25px;
 }
 
 nav ul li a:hover {
-  color: pink;
+  border-bottom: var(--border);
 }
 
 main header {
