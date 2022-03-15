@@ -23,7 +23,7 @@ header h1 {
   margin: 0;
   background-color: var(--purple);
   margin-left: -50px;
-  padding: 5px 15px 0 15px;
+  padding: 15px 15px 0 15px;
   color: var(--black);
   border-radius: var(--border-radius-rounded-right);
 }
@@ -48,7 +48,7 @@ nav ul li {
 nav ul li a {
   color: var(--purple);
   text-decoration: none;
-  padding: 10 25px;
+  /* padding: 10 25px; */
 }
 
 nav ul li a:hover {
@@ -56,10 +56,16 @@ nav ul li a:hover {
 }
 
 main header {
+  display: flex;
+  justify-content: center;
   position: relative;
   background: linear-gradient(to bottom, rgba(128, 0, 128, .35), rgba(128, 0, 128, .35)), url('../images/hero-photo.28d4e53e_cropped.jpg');
   height: 365px;
   margin-bottom: 25px;
+}
+
+main header img {
+  border-radius: 5px;
 }
 
 main header h2 {
@@ -189,6 +195,10 @@ article figure figcaption {
 }
 
 @media screen and (max-width: 968px) {
+  main img {
+    width: 50%;
+  }
+
   section {
     flex-direction: column;
     align-items: center;
