@@ -5,6 +5,10 @@
   --border: 3px solid var(--purple);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   display: flex;
   justify-content: space-between;
