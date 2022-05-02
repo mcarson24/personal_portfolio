@@ -151,6 +151,8 @@ figure {
 .contact-info {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding-top: 25px;
 }
 
 .contact-info a {
@@ -197,8 +199,18 @@ article figure figcaption {
   padding: 5px 10px;
 }
 
+a svg.icon {
+  height: 50px;
+  width: 50px;
+  fill: var(--purple);
+}
+
 /* Responsive styles */
 @media screen and (max-width: 968px) {
+  .container {
+    max-width: 95%;
+  }
+
   main img {
     width: 50%;
   }
@@ -231,6 +243,10 @@ article figure figcaption {
   #contact article {
     display: flex;
     flex-direction: column;
+  }
+
+  #contact article.contact-info {
+    flex-direction: row;
   }
 
   #contact article p {
